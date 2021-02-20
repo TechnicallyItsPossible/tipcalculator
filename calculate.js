@@ -1,7 +1,3 @@
-function calc()
-{
-
-}
 function dectip()
 {
     var x=parseInt(document.getElementById("TipPercent").value);
@@ -59,9 +55,6 @@ function calc()
    var totaltip=(tippercentage*bill)/100;
    var tpp=totaltip/pep;
    var totalperperson=tpp+(bill/pep);
-   console.log(totaltip);
-   console.log(tpp);
-   console.log(totalperperson);
-   document.getElementById('tipperperson').innerHTML="$ "+Math.round(tpp);
-   document.getElementById('totalperperson').innerHTML="$ "+Math.round(totalperperson);
+   document.getElementById('tipperperson').innerHTML="$ "+tpp.toFixed(2);
+   document.getElementById('totalperperson').innerHTML="$ "+totalperperson.toFixed(2);
 }
