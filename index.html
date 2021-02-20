@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculate.js"></script>
+    <title>Document</title>
+</head>
+<body style="padding: 8%;">
+    <div class="container" style="border: solid #778899 2px; border-radius: 8%; padding-left: 10%;padding-right: 10%;">
+    <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <form action="#" onsubmit="calc();return false">
+                <label >Bill</label><br>
+                <input type="number" name="Bill" id="bil" value="0" onchange="calc()"><br><br>
+                <label >Tip %</label> <br>
+                <Button onclick="calc();dectip();" style="border-radius: 20%;">-</Button><input onchange="calc()" type="number" min="1" max="100" id="TipPercent" value="0"/><Button onclick="calc();inctip();" style="border-radius: 20%;">+</Button><br><br>
+                <label >Number of people</label> <br>
+                <Button onclick="calc();decpep();" style="border-radius: 20%;">-</Button><input type="number" min="1" max="100" id="PeopleNumber" value="1"/><Button onclick="calc();incpep();" style="border-radius: 20%;">+</Button><br>
+                <br>
+              </form>
+          </div>
+          <div class="col-6">
+            <div class="row">
+                <div class="col">
+                    <h2>Tip</h2><br>
+                    <p>per person</p>
+                    <h2>Total</h2>
+                    <p>per person</p></div>
+                <div class="col">
+                    <h1 id="tipperperson">$0</h1><br><br>
+                    <h1 id="totalperperson">$0</h1>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
