@@ -55,6 +55,14 @@ function calc()
    var totaltip=(tippercentage*bill)/100;
    var tpp=totaltip/pep;
    var totalperperson=tpp+(bill/pep);
+   if(isNaN(tpp) || isNaN(totalperperson))
+   {
+    document.getElementById('tipperperson').innerHTML="Invalid Inputs";
+    document.getElementById('totalperperson').innerHTML="Invalid Inputs";
+   }
+   else
+   {
    document.getElementById('tipperperson').innerHTML="$ "+tpp.toFixed(2);
    document.getElementById('totalperperson').innerHTML="$ "+totalperperson.toFixed(2);
+   }
 }
