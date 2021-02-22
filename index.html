@@ -16,11 +16,11 @@
           <div class="col-6">
             <form action="#" onsubmit="calc();return false">
                 <label >Bill</label><br>
-                <input type="number" name="Bill" id="bil" value="0" onchange="calc()"><br><br>
+                <input type="number" style="text-align: center;" name="Bill" id="bil" value="0" onchange="calc()"><br><br>
                 <label >Tip %</label> <br>
-                <Button onclick="calc();dectip();" style="border-radius: 20%;">-</Button><input onchange="calc()" type="number" min="1" max="100" id="TipPercent" value="0"/><Button onclick="calc();inctip();" style="border-radius: 20%;">+</Button><br><br>
+                <Button onclick="calc();dectip();" style="border-radius: 20%;">-</Button><input onchange="calc()" style="text-align: center;" type="number" min="1" max="100" id="TipPercent" value="0" /><Button onclick="calc();inctip();" style="border-radius: 20%;">+</Button><br><br>
                 <label >Number of people</label> <br>
-                <Button onclick="calc();decpep();" style="border-radius: 20%;">-</Button><input type="number" min="1" max="100" id="PeopleNumber" value="1"/><Button onclick="calc();incpep();" style="border-radius: 20%;">+</Button><br>
+                <Button onclick="calc();decpep();" style="border-radius: 20%;">-</Button><input type="number" min="1" max="100" style="text-align: center;" id="PeopleNumber" value="1"/><Button onclick="calc();incpep();" style="border-radius: 20%;">+</Button><br>
                 <br>
               </form>
           </div>
